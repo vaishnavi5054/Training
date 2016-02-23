@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="circle" class="com.techarrows.spring.pojo.Circle">
+    </bean>
+    <bean id="triangle" class="com.techarrows.spring.pojo.Triangle">
+    </bean>
+    <bean id="circleDrawing" class="com.techarrows.spring.pojo.Drawing">
+        <property name="shape" ref="circle"/>
+    </bean>
+    <bean id="triangleDrawing" class="com.techarrows.spring.pojo.Drawing">
+    <property name="shape" ref="triangle"/>
+</bean>
+
+	<bean id="SavingsAccount" class = "com.techarrows.spring.pojo.SavingsAccount">
+	</bean>
+	<bean id="CheckingsAccount" class = "com.techarrows.spring.pojo.CheckingsAccount">
+	</bean>
+	<bean id="SavingsAccountBankAccount" class = "com.techarrows.spring.pojo.AccountType">
+	<property name="bankaccount" ref="SavingsAccount"/> </bean>
+	<bean id="CheckingsAccountBankAccount" class = "com.techarrows.spring.pojo.AccountType">
+	<property name="bankaccount" ref="CheckingsAccount"/>
+	</bean>
+
+ 
+</beans>
