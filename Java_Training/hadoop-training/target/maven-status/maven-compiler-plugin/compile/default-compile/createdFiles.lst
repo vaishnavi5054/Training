@@ -1,0 +1,9 @@
+com\techarrows\training\hwmr\WordCountJob.class
+com\techarrows\training\hwmr2\WCFileJob.class
+com\techarrows\training\hwmr\WordCountMap.class
+com\techarrows\training\hwmr2\WCFileMap.class
+com\techarrows\training\hwmr2\WCFileReducer.class
+com\techarrows\training\mr\InvertedIndexReducer.class
+com\techarrows\training\mr\InvertedIndexMap.class
+com\techarrows\training\mr\InvertedIndexJob.class
+com\techarrows\training\hwmr\WordCountReducer.class
